@@ -16,5 +16,20 @@ Resturant flow diagram
  
 Part 2
 6) Go to python server and query the SQL database by location
-5) Using google maps API show all places where I have eaten 
+7) Using google maps API show all places where I have eaten 
+ 
+Beer Flow Diagram
+1)SMS message (Twillio) 
+OR 
+Upload photo to barcode to website
+Using (openCV and pyzbar and webscraping) 
+2)Recognize text format to be resturant name (regex)
+3)Webscrapping
+  (Returns beer type and manufacturer)
+4)Updates SQL database with the information 
+5) SMS message to confirm success
+
+Part 2
+6) Go to python server and query the SQL database
+7) Returns beer names and ratings
  
