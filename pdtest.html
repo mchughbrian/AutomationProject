@@ -1,0 +1,55 @@
+<!--THIS WAS ADAPTED FROM W3SCHOOLS ONLINE TUTORIAL ON HTML NAVBAR  https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_borders-->
+<!--THIS File coincides with start function at the home page-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Beer and Resturant Database</h2>
+<p>Below are the website options.</p>
+
+<ul>
+  <li><a class="active" href="http://brianm1931z.pythonanywhere.com/form">Find Resturants</a></li>
+  <li><a href="http://brianm1931z.pythonanywhere.com/barcode">Barcode Upload</a></li>
+  <li><a href="http://brianm1931z.pythonanywhere.com/beer">Beer list</a></li>
+</ul>
+
+</body>
+</html>

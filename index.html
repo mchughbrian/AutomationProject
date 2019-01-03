@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!--
+# Following Example Adapted from following Medium.com article:
+# https://medium.com/@antoinegrandiere/image-upload-and-moderation-with-python-and-flask-e7585f43828a
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ENGN PROJECT - Resturants and Beer</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/app.css') }}">
+</head>
+
+<body>
+<header class="navbar">
+  <form action="/upload" method="post" enctype="multipart/form-data" >
+      <span class="btn btn-default btn-file">
+        Browse <input type="file" name="image">
+      </span>
+
+    <input type="submit" value="Upload your image" class="btn btn-primary">
+  </form>
+</header>
+
+</body>
+</html>
